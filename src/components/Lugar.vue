@@ -6,6 +6,11 @@
 <!-- Inicio de Navbar -->
 <nav class="navbar navbar-dark bg-dark">
   <!-- Navbar content -->
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
 </nav>
 
   <!-- Contenedor 1, abarca el buscador -->
@@ -66,8 +71,8 @@
 <style scoped>
 /* Estilos para contenedor 1 */
 .container-1 {
-  width: 1366px;
-  height: 428px;
+    width: 1366px;
+  height: 281px;
   padding: 8px 8px 8px 8px;
   background: #eeeeee;
   border-color: #ffebd2;
