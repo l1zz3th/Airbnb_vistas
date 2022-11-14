@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <form class="form">
+  <form action class="form">
     <div class="form-label">
       <label for="NombreUser">
         <input
@@ -24,6 +24,93 @@
       />
     </label>
     </div>
+    <div class="form-label">
+      <label for="Telefono">
+      <input
+        type="int"
+        class="form-input"
+        aria-describedby="telefonoUser"
+        placeholder="Telefono"
+      />
+    </label>
+    </div>
+    <div class="form-label">
+      <label for="fechaNac">
+      <input
+        type="text"
+        class="form-input"
+        aria-describedby="nacimientoUser"
+        placeholder="Fecha de Nacimiento"
+      />
+    </label>
+    </div>
+    <div class="form-label">
+      <label for="departamento">
+      <input
+        type="text"
+        class="form-input"
+        aria-describedby="departamentoUser"
+        placeholder="Departamento"
+      />
+    </label>
+    </div>
+
+    <div class="form-label">
+      <label for="Municipio">
+      <input
+        type="text"
+        class="form-input"
+        aria-describedby="municipioUser"
+        placeholder="Municipio"
+      />
+    </label>
+    </div>
+
+    <div class="form-label">
+      <label for="Tipo de Documento">
+      <input
+        type="text"
+        class="form-input"
+        aria-describedby="docUser"
+        placeholder="Tipo de Documento"
+      />
+    </label>
+    </div>
+
+    <div class="form-label">
+      <label for="Ndoc">
+      <input
+        type="text"
+        class="form-input"
+        aria-describedby="nDoclUser"
+        placeholder="N° de documento"
+      />
+    </label>
+    </div>
+
+    <div class="form-label">
+      <label for="User">
+      <input
+        v-model="email"
+        type="text"
+        class="form-input"
+        aria-describedby="User"
+        placeholder="Usuario"
+      />
+    </label>
+    </div>
+
+    <div>
+        <label class="form-label" for="#password"></label>
+          <input
+            v-model="password"
+            class="form-input"
+            type="password"
+            id="password"
+            placeholder="Password"
+          />
+    </div>
+    
   </form>
 </template>
 
