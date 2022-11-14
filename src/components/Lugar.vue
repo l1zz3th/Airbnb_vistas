@@ -44,7 +44,8 @@
 
 
   <!-- Contenedor 3, abarca espacio de informacion y derechos reservados -->
-  <div class="container-3">
+  <footer>
+    <div class="container-3">
     <p>
         <a class="info" href="https://www.lipsum.com"> 
             Sobre Nosotros
@@ -65,7 +66,9 @@
         <hr color="black" size="5" />
     </pre>
     <p class="texto-fin"> © 2022 Todos los derechos reservados </p>
-  </div>
+  </div> 
+  </footer>
+  
 </template>
 
 <style scoped>
