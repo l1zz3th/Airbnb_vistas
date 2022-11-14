@@ -79,12 +79,12 @@ h1 {
 }
 
 .form {
-  background-position: right;
+  background-position: center center;
   margin: 3rem auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 450px;
+  width: 400px;
   min-width: auto;
   max-width: auto;
   background: rgba(250, 253, 255, 0.9);
