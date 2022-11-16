@@ -3,15 +3,6 @@
 </script>
 
 <template>
-<!-- Inicio de Navbar -->
-<nav class="navbar navbar-dark bg-dark">
-  <!-- Navbar content -->
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-</nav>
 
   <!-- Contenedor 1, abarca el buscador -->
   <div class="container-1">
@@ -66,7 +57,7 @@
         <hr color="black" size="5" />
     </pre>
     <p class="texto-fin"> © 2022 Todos los derechos reservados </p>
-  </div> 
+  </div>
   </footer>
   
 </template>

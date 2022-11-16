@@ -2,10 +2,13 @@
 </script>
 
 <template>
-  <div class="contenedor">
-    <h1 class="title">Inicia Sesion</h1>
+  <h1 class="title">Inicia Sesion</h1>
 
-    <img alt="Fondo" class="img-fondo" src="@/assets/images/fondo.jpg" />
+  <div class="contenedor">
+    
+    <p>
+      <img alt="Fondo" class="img-fondo" src="@/assets/images/fondo.jpg" />
+    </p>
     <Content>
       <div>
         <form action class="form">
@@ -40,16 +43,16 @@
 <style scoped>
 .tittle {
   text-align: center;
-}
+} 
 .contenedor {
   background: white;
   width: 900px;
   height: 3rem auto;
   align-content: center;
-  display: block;
-}
-.content {
   display: flex;
+}
+.Content {
+  display: block;
   align-items: center;
   height: 100vh;
   margin: 0 auto;
@@ -60,7 +63,7 @@
 h1 {
   text-align: center;
   color: black;
-  width: auto;
+  width: 900px;
   height: 70px;
   padding: 8px 8px 8px 8px;
   background: #ffebd2;
@@ -72,19 +75,20 @@ h1 {
 .img-fondo {
   background-position: center center;
   background-size: cover;
-  height: auto;
-  width: auto;
+  height: 650px;
+  width: 450px;
   flex: 0 0 calc(60%);
   position: relative;
 }
 
 .form {
-  background-position: center center;
+  background-position: right right;
   margin: 3rem auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 400px;
+  width: 350px;
+  height: 450px;
   min-width: auto;
   max-width: auto;
   background: rgba(250, 253, 255, 0.9);

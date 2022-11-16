@@ -2,6 +2,9 @@
 </script>
 
 <template>
+<div class="contenedor">
+  <h1 class="title">Registrate</h1>
+
   <form action class="form">
     <div class="form-label">
       <label for="NombreUser">
@@ -112,9 +115,38 @@
     </div>
     
   </form>
+</div>
+
 </template>
 
 <style scoped>
+.contenedor
+{
+  background-color: white;
+  width: 1250px;
+  height: 1000px;
+  position: center center;
+  display: block;
+}
+/* Estilos para titulo */
+.tittle {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  color: black;
+  width: auto;
+  height: 70px;
+  padding: 8px 8px 8px 8px;
+  background: #ffebd2;
+  border-color: #ffebd2;
+  border-width: 1px;
+  border-style: solid;
+}
+
+
+
 /* Estilos para formulario */
 .form {
   background-position: center center;
