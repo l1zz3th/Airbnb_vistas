@@ -75,27 +75,24 @@
 }
 .form-buscar{
     background-color: var(--cream);
-    display: flex;
+    display: block;
     flex-direction: column;
     justify-content: center;
     padding: 3rem;
-    width: 100vw;
+    width: 800px;
+    margin-top: 20px;
+    font-family: 'Comfortaa';
+    font-size: 30px;
 }
 
 .buscar input{
-    margin-top: 35px;
+    margin-top: 50px;
     border-radius: 25px;
     border-color: var(--blue);
     border-width: 2.5px;
     width: 500px;
     height: 50px;
     font-family: 'Comfortaa';
-}
-
-.busqueda label{
-    margin-top: 20px;
-    font-family: 'Comfortaa';
-    font-size: 30px;
 }
 
 .icons-busqueda {

@@ -9,7 +9,8 @@
     <p>
       <img alt="Fondo" class="img-fondo" src="@/assets/images/fondo.jpg" />
     </p>
-    <Content>
+
+    <div class="content">
       <div>
         <form action class="form">
           <label class="form-label" for="#email">Email:</label>
@@ -36,13 +37,13 @@
           <input class="form-submit" type="submit" value="Iniciar Sesion" />
         </form>
       </div>
-    </Content>
+    </div>
   </div>
 </template>
 
 <style scoped>
 .tittle {
-  text-align: center;
+  text-align: center center;
 } 
 .contenedor {
   background: white;
@@ -50,8 +51,9 @@
   height: 3rem auto;
   align-content: center;
   display: flex;
+  margin: 0 auto;
 }
-.Content {
+.content {
   display: block;
   align-items: center;
   height: 100vh;
