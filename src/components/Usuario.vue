@@ -1,200 +1,145 @@
 <script>
+
 </script>
 
 <template>
-<div class="contenedor">
-  <h1 class="title">Registrate</h1>
+    <nav class="cabe">
+		<label class="titu">Resgistrate</label>
+	</nav>
 
-  <form action class="form">
-    <div class="form-label">
-      <label for="NombreUser">
-        <input
-          type="text"
-          class="form-input"
-          aria-describedat="NameUser"
-          placeholder="Nombre"
-        />
-      </label>
-    </div>
+	<div class="imagen">
+		<img src="../assets/images/img.png" width="90" height="90">
+	</div>
 
-    <div class="form-label">
-      <label for="Email">
-      <input
-        type="email"
-        class="form-input"
-        aria-describedby="emailUser"
-        placeholder="Email"
-      />
-    </label>
-    </div>
-    <div class="form-label">
-      <label for="Telefono">
-      <input
-        type="int"
-        class="form-input"
-        aria-describedby="telefonoUser"
-        placeholder="Telefono"
-      />
-    </label>
-    </div>
-    <div class="form-label">
-      <label for="fechaNac">
-      <input
-        type="text"
-        class="form-input"
-        aria-describedby="nacimientoUser"
-        placeholder="Fecha de Nacimiento"
-      />
-    </label>
-    </div>
-    <div class="form-label">
-      <label for="departamento">
-      <input
-        type="text"
-        class="form-input"
-        aria-describedby="departamentoUser"
-        placeholder="Departamento"
-      />
-    </label>
-    </div>
-
-    <div class="form-label">
-      <label for="Municipio">
-      <input
-        type="text"
-        class="form-input"
-        aria-describedby="municipioUser"
-        placeholder="Municipio"
-      />
-    </label>
-    </div>
-
-    <div class="form-label">
-      <label for="Tipo de Documento">
-      <input
-        type="text"
-        class="form-input"
-        aria-describedby="docUser"
-        placeholder="Tipo de Documento"
-      />
-    </label>
-    </div>
-
-    <div class="form-label">
-      <label for="Ndoc">
-      <input
-        type="text"
-        class="form-input"
-        aria-describedby="nDoclUser"
-        placeholder="N° de documento"
-      />
-    </label>
-    </div>
-
-    <div class="form-label">
-      <label for="User">
-      <input
-        v-model="email"
-        type="text"
-        class="form-input"
-        aria-describedby="User"
-        placeholder="Usuario"
-      />
-    </label>
-    </div>
-
-    <div>
-        <label class="form-label" for="#password"></label>
-          <input
-            v-model="password"
-            class="form-input"
-            type="password"
-            id="password"
-            placeholder="Password"
-          />
-    </div>
-    
-  </form>
-</div>
+	<div class="container">
+		<div class="wrapper">
+			<form class="form-registro">
+	
+				<div class="form-row">
+					<div class="form-group col-md-6">
+						<input type="text" name="nombre" placeholder="Nombre" size="55" class="form-control" >
+					</div>
+				</div>
+		
+				<div class="form-row">
+					<div class="form-group col-md-6">
+						<input type="email" name="email" placeholder="Email" size="55" class="form-control" >
+					</div>
+				</div>
+		
+				<div class="form-row">
+					<div class="form-group col-md-6">
+						<input type="text" name="telefono" placeholder="Telefono" size="55" class="form-control" >
+					</div>
+				</div>
+		
+				<div class="form-row">
+					<div class="form-group col-md-6">
+						<input type="date" name="dtFecha" placeholder="Fechadenacimiento" class="form-control" >
+					</div>
+				</div>
+		
+				<div class="form-row">
+					<div class="form-group col-md-3">
+						<select id="cbxDepartamento" class="form-control">
+							<option value="">Departamento</option>	
+						</select>
+					</div>
+		
+					<div class="form-group col-md-3">
+						<select id="cbxMunicipio" class="form-control">
+							<option value="">Municipio</option>	
+						</select>
+					</div>
+		
+				</div>
+		
+				<div class="form-row">
+					<div class="form-group col-md-3">
+						<select id="cbxTipoD" class="form-control">
+							<option value="">Tipo de Documento</option>	
+						</select>
+					</div>
+		
+					<div class="form-group col-md-3">
+						<input type="numDocumento" name="numDocumento" placeholder="N° Documento" class="form-control" >
+					</div>
+		
+				</div>
+		
+				<div class="form-row">
+					<div class="form-group col-md-3">
+						<input type="text" name="txtUsuario" class="form-control" placeholder="Usuario">
+					</div>
+					<div class="form-group col-md-3">
+						<input type="password" name="txtPassword" class="form-control" placeholder="Contraseña">
+					</div>
+				</div>
+				
+				<div class="form-row">
+					<div class="form-group col-md-5">
+						<input type="checkbox" name="txtTerminos" id="terminos">
+						He leído y aceptado los <a href="https://www.lipsum.com">Terminos y condiciones</a>
+					</div>
+				</div>
+		
+				<div class="form-row">
+					<div class="form-group col-md-4">
+						<button class="boton" type="submit">Registrarme</button>
+					</div>
+				</div>
+			</form>	
+		</div>
+	</div>
 
 </template>
 
 <style scoped>
-.contenedor
-{
-  background-color: white;
-  width: 1250px;
-  height: 1000px;
-  position: center center;
-  display: block;
+.cabe{ 
+	background-color: #FFEBD2;
+	height: 70px;
+	padding: 20px;
+	text-align: center;
+
 }
-/* Estilos para titulo */
-.tittle {
-  text-align: center;
+.titu{
+ color: black;
+ font-size: 25px;
 }
 
-h1 {
-  text-align: center;
-  color: black;
-  width: auto;
-  height: 70px;
-  padding: 8px 8px 8px 8px;
-  background: #ffebd2;
-  border-color: #ffebd2;
-  border-width: 1px;
-  border-style: solid;
+.imagen{
+	margin-top: 10px;
+	text-align: center;
 }
 
-
-
-/* Estilos para formulario */
-.form {
-  background-position: center center;
-  margin: 3rem auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 1250px;
-  min-width: auto;
-  max-width: auto;
-  background: rgba(250, 253, 255, 0.9);
-  border-radius: 5px;
-  padding: 40px;
-  box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.3);
-}
-.form-label {
-  width: 154px;
-  height: 60px;
-  color: #da5526;
-  font-family: "Arial";
-  font-size: large;
-  text-align: left;
+.container{
+	position: absolute;
+	left: 25%;
+	top: 25%;
 }
 
-.form-input {
-  padding: 10px 325px;
-  display: flex;
-  border: 1px solid rgb(0, 0, 0);
-  color: rgb(2, 2, 2);
+.wrapper{
+	position: relative;
+	left: 15%;
+	top: 15%;
 }
-.form-submit {
-  background: #da810d;
-  border: none;
-  color: white;
-  margin-top: 3rem;
-  padding: 1rem 0;
-  cursor: pointer;
+
+.input{
+	border-radius: 5px;
+	height: 40px;
 }
-.error {
-  margin: 1rem 0 0;
-  color: #ff4a96;
+
+#terminos{
+	margin-left: 75px;
 }
-.button {
-  width: 415px;
-  height: 107px;
-  padding: 8px 8px 8px 8px;
-  box-shadow: 0px 5px 10px rgba(248, 95, 106, 0.23);
-  background: #f68930;
-  border-radius: 6px 6px 6px 6px;
-}
+
+.boton{
+	margin-left: 75px;
+	 background-color: #FC7643;
+	  color: #FFF; 
+	  border-radius: 5px;
+	  border: none;
+	  width: 400px;
+	  height: 40px;
+	}
 </style>

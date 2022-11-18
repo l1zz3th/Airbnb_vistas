@@ -5,10 +5,17 @@ import { RouterLink, RouterView } from "vue-router";
 <template>
   <header>
     <nav>
-    <RouterLink to="/lugar">Lugar</RouterLink>
+    <a class="navegar">
+      <RouterLink to="/lugar">Lugar</RouterLink>
     <RouterLink to="/reserva">Reserva</RouterLink>
     <RouterLink to="/user">Registrarse</RouterLink>
     <RouterLink to="/">Login</RouterLink>
+    </a>
+    <button class="burguer" type="button" data-toggle="collapse" 
+          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+          aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
   </nav>
   </header>
 
@@ -19,15 +26,31 @@ import { RouterLink, RouterView } from "vue-router";
 </template>
 
 <style scoped>
-body{
+template {
   background-color: aliceblue;
 }
 
 header{
   background-color: #f68930;
-  text-align: center;
+  text-align: left;
   height: 35px;
   width: 1250px;
 }
 
+.navegar
+{
+  color: aliceblue;
+}
+
+button .burguer{
+  background-color: aquamarine;
+}
+
 </style>
+
+<!-- 
+    <RouterLink to="/lugar">Lugar</RouterLink>
+    <RouterLink to="/reserva">Reserva</RouterLink>
+    <RouterLink to="/user">Registrarse</RouterLink>
+    <RouterLink to="/">Login</RouterLink>
+-->

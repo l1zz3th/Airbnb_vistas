@@ -28,11 +28,17 @@
         
     </div>
 
+    <div class="categorias">
+      <img class="hotel" src="../assets/images/categoria/hotelCate.png" alt="hotel">
+      <img class="cabaña" src="../assets/images/categoria/cabañaCate.png" alt="cabaña">
+      <img class="casa" src="../assets/images/categoria/casaCate.png" alt="casa">
+    </div>
+
   </div>
 
   <!-- Contenedor 2, abarca  espacios para lugares-->
   <div class="container-2"></div>
-
+    
 
   <!-- Contenedor 3, abarca espacio de informacion y derechos reservados -->
   <footer>
@@ -133,6 +139,8 @@
 
 }
 
+
+
 /* Estilo imagnes centrales para categoria */
 .imag-busqueda 
 {
@@ -140,16 +148,51 @@
     height: 50px;
     border-radius: 0%;
 }
+
+
+/* Estilos para busqueda por categorías */
+
+@media all and (min-width:300px) and (max-width: 1000px)
+{
+.categorias{
+  align-items: center;
+}
+
+.categorias .hotel{
+  width: 300px;
+  height: 150px;
+  align-content: center;
+
+}
+
+.categorias .cabaña{
+  width: 300px;
+  height: 150px;
+  align-content: center;
+
+}
+
+.categorias .casa{
+  width: 300px;
+  height: 150px;
+  align-content: center;
+
+}
+}
+
 /* Estilos para contenedor 2 */
 .container-2 {
   width: 1366px;
   height: 281px;
   padding: 8px 8px 8px 8px;
-  background: #273248;
+  background-color: #273248;
   border-color: #273248;
   border-width: 1px;
   border-style: solid;
+  
 }
+
+
 
 /* Estilos para contenedor 3 */
 .container-3 {
