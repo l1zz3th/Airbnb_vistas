@@ -1,5 +1,5 @@
 <script setup>
-import Usuario from '../components/Usuario.vue'
+import Usuario from '../components/Usuario/Usuario.vue'
 </script>
 
 <template>
