@@ -1,5 +1,5 @@
 <script setup>
-import Lugar from '../components/Lugar.vue'
+import Lugar from '../components/lugar/Lugar.vue'
 </script>
 
 <template>
