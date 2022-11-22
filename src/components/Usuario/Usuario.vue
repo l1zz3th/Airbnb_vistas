@@ -1,6 +1,4 @@
-<script>
-
-</script>
+<script> </script>
 
 <template>
     <nav class="cabe">
@@ -8,7 +6,7 @@
 	</nav>
 
 	<div class="imagen">
-		<img src="../assets/images/img.png" width="90" height="90">
+		<img src="@/assets/images/img.png" width="90" height="90">
 	</div>
 
 	<div class="container">

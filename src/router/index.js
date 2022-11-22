@@ -1,20 +1,26 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+//import Usuario from '@/components/Usuario/Usuario'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/',
-      name: 'home',
+      path: '/login',
+      name: 'login',
       component: HomeView
     },
 
-    //Ruta para usuario
+    //Rutas para usuarios
     {
       path: '/user',
       name: 'user',
-      component: () => import('../views/User.vue')
+      component: () => import('../views/Usuario/User.vue')
+    },
+    {
+      path: '/editarUsuario',
+      name: 'editarUsuario',
+      component: () => import('../views/Usuario/editarUsuario.vue')
     },
 
     //Ruta para cliente
@@ -28,7 +34,7 @@ const router = createRouter({
     {
       path: '/lugar',
       name: 'lugar',
-      component: () => import('../views/Lugares.vue')
+      component: () => import('../views/lugar/Lugares.vue')
     },
 
     //Ruta para reserva
