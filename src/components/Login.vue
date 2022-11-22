@@ -63,7 +63,7 @@
 }
 
 h1 {
-  text-align: center;
+  text-align: center center;
   color: black;
   width: 1250px;
   height: 70px;
