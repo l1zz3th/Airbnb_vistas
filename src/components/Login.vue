@@ -65,7 +65,7 @@
 h1 {
   text-align: center;
   color: black;
-  width: 900px;
+  width: 1250px;
   height: 70px;
   padding: 8px 8px 8px 8px;
   background: #ffebd2;
@@ -77,24 +77,24 @@ h1 {
 .img-fondo {
   background-position: center center;
   background-size: cover;
-  height: 650px;
+  height: 550px;
   width: 450px;
   flex: 0 0 calc(60%);
   position: relative;
+  box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.3);
 }
 
 .form {
   background-position: right right;
-  margin: 3rem auto;
+  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 350px;
-  height: 450px;
+  width: 450px;
+  height: 550px;
   min-width: auto;
   max-width: auto;
   background: rgba(250, 253, 255, 0.9);
-  border-radius: 5px;
   padding: 40px;
   box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.3);
 }
@@ -105,12 +105,14 @@ h1 {
   font-family: "Arial";
   font-size: large;
   text-align: left;
+  border-radius: 5px;
 }
 
 .form-input {
   padding: 10px 15px;
   border: 1px solid rgb(0, 0, 0);
   color: rgb(2, 2, 2);
+  border-radius: 5px;
 }
 .form-submit {
   background: #da810d;
@@ -131,5 +133,6 @@ h1 {
   box-shadow: 0px 5px 10px rgba(248, 95, 106, 0.23);
   background: #f68930;
   border-radius: 6px 6px 6px 6px;
+  border-radius: 5px;
 }
 </style>
