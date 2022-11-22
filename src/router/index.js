@@ -22,12 +22,22 @@ const router = createRouter({
       name: 'editarUsuario',
       component: () => import('../views/Usuario/editarUsuario.vue')
     },
+  /*  {
+      path: '/showUsuario',
+      name: 'showUsuario',
+      component: () => import('../views/Usuario/showUsuario.vue')
+    }, */
 
-    //Ruta para cliente
+    //Rutas para clientes
     {
       path: '/cliente',
       name: 'cliente',
-      component: () => import('../views/Clientes.vue')
+      component: () => import('../views/clientes/Clientes.vue')
+    },
+    {
+      path: '/editarCliente',
+      name: 'editarCcliente',
+      component: () => import('../views/clientes/editarCliente.vue')
     },
 
     //Ruta para lugar

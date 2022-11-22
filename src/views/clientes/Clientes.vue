@@ -1,5 +1,5 @@
 <script setup>
-import Cliente from '../components/cliente/Cliente.vue'
+import Cliente from '@/components/cliente/Cliente.vue'
 </script>
 
 <template>
