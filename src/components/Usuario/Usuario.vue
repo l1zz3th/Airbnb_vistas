@@ -114,12 +114,14 @@
 	position: absolute;
 	left: 25%;
 	top: 25%;
+	
 }
 
 .wrapper{
 	position: relative;
 	left: 15%;
 	top: 15%;
+	
 }
 
 .input{
