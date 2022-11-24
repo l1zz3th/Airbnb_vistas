@@ -1,9 +1,7 @@
 <template>
-    <div  class="actualizar">
-      <h1 class="Actualizar Clientes">Actualizar Clientes</h1>
-  
-          <form action class="form" @submit.prevent="actualizar">
-            
+    <div  class="agregar">
+      <h1 class="Agregar Clientes">Agregar Clientes</h1>
+          <form action class="form" @submit.prevent="agregar">
              <label class="form-label" for="#nombrecliente">Nombre del Cliente:</label>
                   <input
                   v-model="nombrecliente"
@@ -21,14 +19,14 @@
             id="fechadenacimiento"
             placeholder="Fecha de Nacimiento"
           >
-          <label class="form-label" for="#documento">Documentos:</label>
-          <input
-            v-model="documentos"
-            class="form-input"
-            type="documentos"
-            id="documentos"
-            placeholder="Tipo de Documentos"
-          >
+          <label class="form-label" for="#documento"> Tipo de Documentos:</label>
+          
+           <select name ="documentos" id="tipodocumentos">
+            <option value="DUI">DUI</option>
+            <option value="PASAPORTE">PASAPORTE</option>
+            
+           </select>
+          
           <label class="form-label" for="#numerodocumento"> Numero de Documentos:</label>
           <input
             v-model="numerodocumentos"
@@ -45,7 +43,7 @@
             id="telefono"
             placeholder="Telefono"
           >
-          <input class="form-submit" type="submit" value="Actualizar">
+          <input class="form-submit" type="submit" value="Agregar">
         </form>
        </div>
         </template>
@@ -60,7 +58,7 @@
       telefono:""
     }),
     methods: {
-      actualizar() {
+      agregar() {
         console.log(this.nombrecliente);
         console.log(this.documentos);
         console.log(this.numerodocumentos);
@@ -70,60 +68,81 @@
   };
   </script>
   
-  <style lang="scss" scoped>
-  .register {
-    padding: 2rem;
+  <style  scoped>
+  .agregar {
+    background-color: white;
+    width: 1000px;
+    height: 1000px;
+    margin:auto;
+    position: center center;
+    display: block;
   }
   .title {
     text-align: center;
   }
+  h1 {
+    text-align: center;
+    color: black;
+    width: a;
+    height: 60px;
+    padding: 18px 18px 18px 18px;
+    background: #ffebd2;
+    border-color: #ffebd2;
+    border-width: 6px;
+    border-style: solid;
+  }
   .form {
+    background-position: center center;
     margin: 3rem auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 20%;
-    min-width: 350px;
-    max-width: 100%;
-    background: rgba(19, 35, 47, 0.9);
+    justify-content: right;
+    width: 1000px;
+    min-width: auto;
+    max-width: auto;
+    background: rgba(250, 253, 255, 0.9);
     border-radius: 5px;
-    padding: 40px;
+    padding: 20px;
     box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.3);
   }
   .form-label {
-    margin-top: 2rem;
-    color: white;
-    margin-bottom: 0.5rem;
-    &:first-of-type {
-      margin-top: 0rem;
+    width: 154px;
+    height: 50px;
+    color: #da5526;
+    font-family: "Arial";
+    font-size: large;
+    text-align: left;
     }
-  }
   .form-input {
-    padding: 10px 15px;
-    background: none;
-    background-image: none;
-    border: 1px solid white;
-    color: white;
-    &:focus {
-      outline: 0;
-      border-color: #1ab188;
-    }
+    padding: 10px 325px;
+    display: flex;
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(2, 2, 2);
+  }
+  .form-select {
+    padding: 10px 325px;
+    display: flex;
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(2, 2, 2);
   }
   .form-submit {
-    background: #1ab188;
+    background: #da810d;
     border: none;
     color: white;
     margin-top: 3rem;
     padding: 1rem 0;
     cursor: pointer;
-    transition: background 0.2s;
-    &:hover {
-      background: #0b9185;
-    }
   }
   .error {
     margin: 1rem 0 0;
     color: #ff4a96;
   }
+  .button {
+    width: 415px;
+    height: 107px;
+    padding: 8px 8px 8px 8px;
+    box-shadow: 0px 5px 10px rgba(248, 95, 106, 0.23);
+    background: #f68930;
+    border-radius: 6px 6px 6px 6px;
+  }
   </style>
-  
